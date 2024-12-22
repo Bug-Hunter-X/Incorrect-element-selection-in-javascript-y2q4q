@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv" class="myClass">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Correct way to select the element with a specific class
+    var element = document.querySelector(".myClass");
+
+    //Alternative solution:
+    //var element = document.getElementsByClassName("myClass")[0];
+
+    element.innerHTML = "This text is changed.";
+  </script>
+</body>
+</html>
