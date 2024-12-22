@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect way to select an element with a specific class
+    var element = document.querySelector(".myClass"); 
+    //Should be getElementByClassName("myClass")[0] instead
+    element.innerHTML = "This text is changed.";
+  </script>
+</body>
+</html>
